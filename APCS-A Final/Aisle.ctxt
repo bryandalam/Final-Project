@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Aisle
+comment0.text=\r\n\ Creates\ an\ Aisle\ object\ that\ uses\ Item\ as\ an\ instance\ variable\r\n\r\n\ @author\ Bryan\ Lam\r\n)\r\n
+comment1.params=nm\ n\ itstk
+comment1.target=Aisle(java.lang.String,\ Item,\ int)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=other
+comment3.target=boolean\ compareAisles(Aisle)
+numComments=4

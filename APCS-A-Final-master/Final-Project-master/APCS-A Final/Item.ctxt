@@ -1,12 +1,12 @@
 #BlueJ class context
 comment0.target=Item
-comment0.text=\r\n\ Creates\ an\ item\ with\ two\ instance\ variables\r\n\r\n\ @Bryan\ Lam\r\n\ \r\n
+comment0.text=\r\n\ Creates\ an\ item\ with\ two\ instance\ variables\r\n\r\n\ @author\ Bryan\ Lam\r\n\ \r\n
 comment1.params=nm\ pr\ bd
 comment1.target=Item(java.lang.String,\ double,\ java.lang.String)
-comment2.params=
-comment2.target=double\ getPrice()
+comment2.params=pr
+comment2.target=double\ setPrice(double)
 comment3.params=other
-comment3.target=boolean\ compareItem(Item)
+comment3.target=boolean\ compareTo(Item)
 comment4.params=
 comment4.target=java.lang.String\ toString()
 numComments=5

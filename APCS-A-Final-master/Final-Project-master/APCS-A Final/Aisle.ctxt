@@ -6,5 +6,5 @@ comment1.target=Aisle(java.lang.String,\ Item,\ int)
 comment2.params=
 comment2.target=java.lang.String\ toString()
 comment3.params=other
-comment3.target=boolean\ compareAisles(Aisle)
+comment3.target=boolean\ compareTo(Aisle)
 numComments=4

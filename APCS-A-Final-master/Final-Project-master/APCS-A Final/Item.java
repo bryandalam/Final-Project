@@ -2,28 +2,28 @@
 /**
  * Creates an item with two instance variables
  *
- * @Bryan Lam
+ * @author Bryan Lam
  * 
  */
-public class Item
+public class Item implements Comparable
 {
     private String name;
     private double price;
     private String brand;
-    private static int totalItems;
+    private static int totalItems = 50;
     public Item(String nm, double pr, String bd) {
         //sets the instance variables
         this.name = nm;
         this.price = pr;
         this.brand = bd;
     }
-    public double getPrice() {
-        //additional method
-        return this.price;
+    public double setPrice(double pr) {
+        //additional method that resets the price of the item
+        return this.price = pr;
     }
-    public boolean compareItem(Item other) {
+    public boolean compareTo(Item other) {
         //compares the names and brand of the items using the compareTo() method and checks to see if the price is the same
-        if(this.name.compareTo(other.name) == 0 && this.price == other.price && this.brand.compareTo(other.brand) == 0) {
+        if(this.name.equals(other.name) && this.price == other.price && this.brand.equals(other.brand)) {
             return true;
         }
         else {

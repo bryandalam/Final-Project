@@ -12,15 +12,18 @@ public class Aisle
     private Item itemName;
     private int itemsStocked;
     public Aisle(String nm, Item n, int itstk) {
+        //Sets the instance variables
         this.aisleName = nm;
         this.itemName = n;
         this.itemsStocked = itstk;
     }
     public String toString() {
+        //toString method
         return "The " + aisleName + " aisle is stocked with " + itemName + " and has " + itemsStocked + " avaliable.";
     }
-    public boolean compareAisles(Aisle other) {
-        if(this.aisleName.compareTo(other.aisleName) == 0 && this.itemsStocked == other.itemsStocked) {
+    public boolean compareTo(Aisle other) {
+        //compares two Aisle objects using the compareTo method and by checking for numerical equality
+        if(this.aisleName.equals(other.aisleName) && this.itemsStocked == other.itemsStocked) {
             return true;
         }
         else {

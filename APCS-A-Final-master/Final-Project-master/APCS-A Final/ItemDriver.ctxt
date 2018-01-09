@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=Store
+comment0.target=ItemDriver
 comment0.text=\r\n\ Driver\ for\ the\ Item\ class\ and\ creates\ Item\ objects.\ It\ compares\ them\ too.\r\n\r\n\ @author\ Bryan\ Lam\r\n\ \r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])

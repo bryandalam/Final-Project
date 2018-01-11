@@ -5,29 +5,27 @@
  * @author Bryan Lam
  *)
  */
-public class Aisle
+public class Aisle implements Comparable<Aisle>
 {
     //instance variables
     private String aisleName;
     private Item itemName;
-    private int itemsStocked;
-    public Aisle(String nm, Item n, int itstk) {
+    public Aisle(String nm, Item n) {
         //Sets the instance variables
         this.aisleName = nm;
         this.itemName = n;
-        this.itemsStocked = itstk;
     }
     public String toString() {
         //toString method
-        return "The " + aisleName + " aisle is stocked with " + itemName + " and has " + itemsStocked + " avaliable.";
+        return "The " + aisleName + " aisle is stocked with " + itemName + ".";
     }
-    public boolean compareTo(Aisle other) {
-        //compares two Aisle objects using the compareTo method and by checking for numerical equality
-        if(this.aisleName.equals(other.aisleName) && this.itemsStocked == other.itemsStocked) {
-            return true;
+    public int compareTo(Aisle other) {
+        //compares two Aisle objects. Returns 0 if the Aisles are equal and -1 if not.
+        if(this.aisleName.equals(other.aisleName) && this.itemName.equals(other.itemName)) {
+            return 0;
         }
         else {
-            return false;
+            return -1;
         }
     }
 }
